@@ -22,8 +22,8 @@ upload.data <- function(ssh,
   ssh_disconnect(session)
 }
 
-######## test function call ########
-upload.data(ssh = "rgs1e22@iridis5.soton.ac.uk",
-            data.file = "biogem_series_ocn_O2.res",
-            local.dir = "~/", # note local dir needs to be followed by backslash!
-            remote.dir = "~/")
+# ######## test function call ########
+# upload.data(ssh = "rgs1e22@iridis5.soton.ac.uk",
+#             data.file = "biogem_series_ocn_O2.res",
+#             local.dir = "~/", # note local dir needs to be followed by backslash!
+#             remote.dir = "~/")
