@@ -22,7 +22,7 @@ install.R.packages <- function(ssh,
     "
     if(dir.exists('~/R/x86_64-pc-linux-gnu-library/4.1')){
     }else{
-    system(paste0('mkdir~/R/x86_64-pc-linux-gnu-library/4.1'))}
+    system(paste0('mkdir ~/R/x86_64-pc-linux-gnu-library/4.1'))}
     install.packages(", packages,", lib = '~/R/x86_64-pc-linux-gnu-library/4.1', repos = 'https://cloud.r-project.org')
 ")
   #install.packages(", packages,")
