@@ -53,18 +53,11 @@ check.output <- function(ssh,
 #              remote.dir = "~/",
 #              output.file="default")  # default sbatch name will be the same name as your rscript with different file type
 
-# or
+# or - if you want to just save the output and not view it in console...
 # x <- check.output(ssh = "rgs1e22@iridis5.soton.ac.uk",
 #              rscript = "test2.R",
 #              local.dir = "~/", # note local dir needs to be followed by backslash!
 #              remote.dir = "~/",
-#              output.file="default")  # default sbatch name will be the same name as your rscript with different file type
+#              output.file="default",
+#              verbose = FALSE)
 
-
-
-######## test function call ########
-# check.output(ssh = "rgs1e22@iridis5.soton.ac.uk",
-#              rscript = "test2.R",
-#              local.dir = "~/", # note local dir needs to be followed by backslash!
-#              remote.dir = "~/",
-#              output.file="default")  # default sbatch name will be the same name as your rscript with different file type
