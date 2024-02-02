@@ -24,4 +24,4 @@ check.queue <- function(ssh,
 }
 
 ######## test function call ########
-check.queue(ssh = "rgs1e22@iridis5.soton.ac.uk")
+# check.queue(ssh = "rgs1e22@iridis5.soton.ac.uk")
