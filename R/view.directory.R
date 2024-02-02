@@ -7,7 +7,6 @@
 # note that for now this only uploads to the home directory of your cluster account...
 
 view.directory <- function(ssh,
-                        local.dir = "~/", # note local dir needs to be followed by backslash!
                         remote.dir = "~/"){
 
 
@@ -23,5 +22,4 @@ view.directory <- function(ssh,
 
 ######## test function call ########
 # view.directory(ssh = "rgs1e22@iridis5.soton.ac.uk",
-#             local.dir = "~/", # note local dir needs to be followed by backslash!
 #             remote.dir = "~/")
