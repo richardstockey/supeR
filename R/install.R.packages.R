@@ -34,7 +34,7 @@ install.R.packages <- function(ssh,
   # upload R script file
   scp_upload(session, files = paste0(local.dir, R.file.name), verbose=TRUE)
 
-  ssh_exec_wait(session, command = paste0("cd ", remote.dir, "; module load gdal; module load ", gcc.version, "; module load ", R.version, "; Rscript ", R.file.name))
+  ssh_exec_wait(session, command = paste0("cd ", remote.dir, "; module load geos; module load proj; module load gdal; module load ", gcc.version, "; module load ", R.version, "; Rscript ", R.file.name))
   ssh_disconnect(session)
 }
 
