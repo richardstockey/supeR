@@ -43,6 +43,9 @@ module purge
 },"
 module load gcc
 module load R/4.1.1
+module load geos
+module load proj 
+module load gdal
 
 Rscript ", rscript, "
 ")
@@ -70,7 +73,7 @@ if(remote.dir == "~/"){
 }else {
   scp_upload(session, files = sbatch.file.local, to = remote.dir, verbose=TRUE)
 }
-ssh_exec_wait(session, command=paste0("cd ", remote.dir, "; module load gdal; module load ", gcc.version, "; module load ", R.version, "; sbatch ", sbatch.file.short))
+ssh_exec_wait(session, command=paste0("cd ", remote.dir, "; module load geos; module load proj; module load gdal; module load ", gcc.version, "; module load ", R.version, "; sbatch ", sbatch.file.short))
 ssh_disconnect(session)
 }
 
